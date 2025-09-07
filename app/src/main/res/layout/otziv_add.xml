@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Reviews_Add"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:layout_marginTop="27dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/actor_poster"
+                android:layout_width="148dp"
+                android:layout_height="219dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text"
+                android:text="ОТЗЫВ"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/cuyabra"
+                app:layout_constraintTop_toBottomOf="@+id/actor_poster" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@id/linia"
+            android:layout_marginTop="5dp"
+            android:layout_width="6600px"
+            android:layout_height="2px"
+            android:background="@color/white" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cuyabra"
+                android:text="User1"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <EditText
+                android:id="@+id/quantity_ev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:fontFamily="@font/cuyabra"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawablePadding="10dp"
+                android:gravity="left"
+                android:hint=".../10"
+                android:drawableLeft="@drawable/top_star"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColor="#80FFFFFF"
+                android:textColorHint="#80FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name_user" />
+
+            <EditText
+                android:id="@+id/Komment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/ic_comment"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/cuyabra"
+                android:gravity="left"
+                android:hint="Комментарий"
+                android:padding="10dp"
+                android:textColor="#80FFFFFF"
+                android:textColorHint="#80FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/quantity_ev" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/add_otziv_btn"
+                android:layout_width="114dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/button_style"
+                android:fontFamily="@font/cuyabra"
+                android:text="Добавить"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Komment" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

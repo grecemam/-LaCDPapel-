@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "912613276128",
+    "project_id": "lacdpapel-af5ca",
+    "storage_bucket": "lacdpapel-af5ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:912613276128:android:d5e183593d6ab651e05385",
+        "android_client_info": {
+          "package_name": "com.example.lacdpapel"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOaBVzJ0hxK0uR528u71qQNQn70KrywSc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

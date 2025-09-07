@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageProduct"
+        android:layout_width="190dp"
+        android:layout_height="210dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameProduct"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tолстовка"
+        android:fontFamily="@font/cuyabra"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="@id/imageProduct" />
+
+    <TextView
+        android:id="@+id/descriptionProduct"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Описание продукта"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/cuyabra"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/nameProduct"
+        app:layout_constraintStart_toStartOf="@id/nameProduct"
+        app:layout_constraintTop_toBottomOf="@id/nameProduct" />
+
+    <TextView
+        android:id="@+id/priceProduct"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cuyabra"
+        android:text="б4678"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/quantityTextView"
+        app:layout_constraintEnd_toEndOf="@id/descriptionProduct"
+        app:layout_constraintStart_toStartOf="@id/descriptionProduct" />
+
+    <TextView
+        android:id="@+id/quantityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="1"
+        android:fontFamily="@font/cuyabra"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/addquantity"
+        app:layout_constraintStart_toEndOf="@+id/removequantity"
+        app:layout_constraintTop_toBottomOf="@+id/imageProduct" />
+
+    <TextView
+        android:id="@+id/removequantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/cuyabra"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageProduct" />
+
+    <TextView
+        android:id="@+id/addquantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/cuyabra"
+        app:layout_constraintTop_toBottomOf="@+id/imageProduct" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="170dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

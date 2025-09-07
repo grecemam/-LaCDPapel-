@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LaCDPapel</string>
+
+    <string name="regis"><u>Регистрация</u></string>
+    <string name="open"> Open Navigation</string>
+    <string name="close"> Close Navigation</string>
+
+    <style name="MenuItemTextStyle">
+        <item name="android:fontFamily">@font/cuyabra</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+</resources>

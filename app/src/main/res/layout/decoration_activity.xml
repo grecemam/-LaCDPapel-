@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.Decoration"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cuyabra"
+        android:text="ОФОРМЛЕНИЕ ЗАКАЗА"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/address_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:fontFamily="@font/cuyabra"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawablePadding="10dp"
+        android:gravity="left"
+        android:hint="АДРЕС"
+        android:drawableLeft="@drawable/ic_home"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="#80FFFFFF"
+        android:textColorHint="#80FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+    <EditText
+        android:id="@+id/card_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:fontFamily="@font/cuyabra"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawablePadding="10dp"
+        android:gravity="left"
+        android:hint="НОМЕР КАРТЫ"
+        android:drawableLeft="@drawable/ic_card"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="#80FFFFFF"
+        android:textColorHint="#80FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address_et" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/card_et">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/Writeoffimmediately_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Списать сразу"
+            android:drawableLeft="@drawable/radio_button_selector"
+            android:checked="false"
+            android:drawablePadding="10dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/cuyabra"
+            android:textSize="20dp"
+            android:button="@null"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_et" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/Uponreceipt_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="При получении"
+            android:fontFamily="@font/cuyabra"
+            android:textSize="20dp"
+            android:drawablePadding="10dp"
+            android:button="@null"
+            android:drawableLeft="@drawable/radio_button_selector"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/Writeoffimmediately_rb"
+            app:layout_constraintTop_toBottomOf="@+id/card_et" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/totalAmountTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/cuyabra"
+        android:text="Итог: 0"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/next_btn"
+        android:layout_width="181dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_style2"
+        android:fontFamily="@font/cuyabra"
+        android:text="Заказать"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
